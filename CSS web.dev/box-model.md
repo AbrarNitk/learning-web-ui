@@ -66,3 +66,43 @@ Presentational styles
 
 ## The areas of the box model
 
+- the padding box surrounds the content box and is the space created by the padding property.
+- because padding is inside the box, the background of the box will be visible in the space that it creates.
+- if box have `overflow` rules set, `overflow: auto` or `overflow: scroll`, the scrollbars will occupy this space.
+
+- ![Imp Image](areas-of-box-model.png)
+
+- the border box surrounds the padding box and its space is occupied by the border value.
+- the [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) property is used to visually frame an element.
+
+```html
+<div>I have a border, an outline, and a box shadow! Amazing, isn't it?</div>
+```
+
+```css
+div {
+  border: 0.5rem outset pink;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 3rem;
+  box-shadow: 0 0 0 3rem skyblue;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+  outline: 0.5rem solid khaki;
+}
+```
+
+
+- margin box is the space around the box, defined by the margin rule of the box.
+- properties such as `outline` and `box-shadow` occupy the margin space too because they
+  on the top, so they do not affect the size of the box.
+
+
+## Controlling the box model
+
+
+
+# References
+
+- https://web.dev/learn/css/box-model/
+- https://css-tricks.com/responsive-layouts-fewer-media-queries/
