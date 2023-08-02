@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .container {
+            padding: 0;
+            margin: 0;
+            display: inline;
+        }
+
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            width: 15%;
+            height: 100%;
+        }
+
+        .left-container-content {
+            border: 1px black solid;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .right-container {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            width: 85%;
+            height: 100%;
+        }
+
+        .right-container-content {
+            border: 1px black solid;
+            margin: 10px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-container">
+        <div class="left-container-content">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <div class="right-container-content">
+        The `flex: 1` property is a shorthand for three individual Flexbox properties: `flex-grow`, `flex-shrink`, and `flex-basis`. When you set an element's `flex` property to `1`, it means:
+
+        - `flex-grow: 1`: The flex item will grow and occupy all the available space along the main axis if there is any extra space in the flex container. It takes a proportionate share of the available space along with other flex items with a `flex-grow` value of 1.
+
+        - `flex-shrink: 1`: The flex item will shrink proportionally if there is not enough space in the flex container to accommodate all the flex items. A `flex-shrink` value of 1 indicates that the item is allowed to shrink to prevent overflow.
+
+        - `flex-basis: 0%`: The initial size of the flex item before the remaining space is distributed. A `flex-basis` value of `0%` means the flex item starts with zero width along the main axis.
+
+        In summary, `flex: 1` tells the flex item to grow, shrink, and start with zero width. It is commonly used when you want flex items to equally share the available space along the main axis, making them occupy the same amount of space regardless of their content.
+
+        For example:
+
+        ```html
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        ```
+
+        ```css
+        .flex-container {
+        display: flex;
+        }
+
+        .flex-item {
+        flex: 1; /* All flex items will equally share the available space */
+        padding: 10px;
+        }
+        ```
+
+        In this example, all three `.flex-item` elements will have an equal share of the available space along the main axis, and they will be distributed evenly, filling the entire flex container. If there are more items or the content inside the items changes, they will automatically adjust their width to maintain equal distribution and prevent overflow.
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

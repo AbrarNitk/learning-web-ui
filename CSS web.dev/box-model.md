@@ -105,4 +105,5 @@ div {
 # References
 
 - https://web.dev/learn/css/box-model/
-- https://css-tricks.com/responsive-layouts-fewer-media-queries/
+- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
+

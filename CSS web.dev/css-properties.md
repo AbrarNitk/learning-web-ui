@@ -44,3 +44,8 @@ elements interact with it and how it is rendered on the page.
   space is limited.
 - `flex-basis`: This property specifies the initial size of the flex items before the remaining space is 
   distributed.
+
+## Reference
+
+- Flex Direction: https://css-tricks.com/almanac/properties/f/flex-direction/
+- [Responsive Layouts](https://css-tricks.com/responsive-layouts-fewer-media-queries/)
